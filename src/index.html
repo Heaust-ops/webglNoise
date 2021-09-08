@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="./index.css">
+    <script type="preload" src="./bundle.js"></script>
+    <title>Generic</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: space-around;">
+        <div>
+            <p>Seed: </p><input type="number" name="seed" id="seed" value="1" /><br>
+            <p>Frequency: </p><input type="number" name="frequency" id="frequency" value="4" /><br>
+            <p>Resolution: </p><input type="number" name="res" id="res" value="10" /><br>
+        </div>
+        <div>
+            <p>Width: </p><input type="number" name="width" id="width" value="800" step="2" /><br>
+            <p>Height: </p><input type="number" name="height" id="height" value="800" step="2" /><br><br>
+            <button style="cursor: pointer;" id="size">Double Canvas</button><br><br>
+            <button style="cursor: pointer;" id="download" >Download</a><br>
+            </button>
+        </div>
+        <div style="width: 50%;"></div>
+    </div>
+    <canvas id="glCanvas" width="800" height="800"></canvas>
+</body>
+
+</html>
